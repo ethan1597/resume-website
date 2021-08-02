@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+:root {
+    --primary-color: #355070;
+    --secondary-color: #808080;
+    --dark-color: #002240;
+    --light-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base Styles */
+
+body {
+    font-family: 'STIX Two Math', serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid { 
+    display: grid;
+}
+
+.card {
+    padding: 10px 10px 0;
+    margin: 0;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-body {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar Style */
+
+.navbar {
+    background-color: var(--dark-color);
+    color: #fff;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .social {
+    display: flex;
+}
+
+.social h1 {
+    margin-right: 10px;
+}
+
+.social i:hover {
+    transform: scale(.90);
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Showcase Style */
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.showcase .container {
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.showcase p {
+    font-size: 1.2rem;
+}
+
+.showcase h2 {
+    font-size: 2rem;
+}
+
+.showcase img {
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.showcase .info {
+    padding: 20px;
+    width: 50%;
+}
+
+/* Education Style */
+.education {
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+}
+
+.education p {
+    font-size: 1.2rem;
+    padding:20px 20px 30px;
+}
+
+.education .flex {
+    flex-direction: column;
+}
+
+.education .container {
+    padding: 50px 20px;
+}
+
+.education h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.education img {
+    width: min(800px, 100%);
+    height: auto;
+}
+
+/* Skills and Experience Style */
+.skills {
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .container {
+    padding: 50px 20px;
+}
+
+.skills > *:first-child { 
+    padding-bottom: 0;
+}
+
+.skills .flex {
+    flex-direction: column;
+}
+
+.skills .languages {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.skills h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.skills p {
+    font-size: 1.2rem;
+    padding:20px 20px 0;
+}
+
+.languages .card {
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* About Styles */
+
+.about {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+    padding:20px 20px 30px;
+}
+
+.about .flex {
+    flex-direction: column;
+}
+
+.about .container {
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about img {
+    width: min(500px, 100%);
+    height: auto;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .container {
+    padding: 10px 0;
+}
+
+.footer .flex {
+    justify-content: space-around;
+}
+
+.footer h3 {
+    font-weight: 300;
+}
+
+/* Utilities */
+
+.blue {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.grey {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.white {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+@media(max-width: 800px) {
+    .navbar{
+        height: 110px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .showcase .info {
+        width: 95%;
+        padding: 0 auto;  
+    }
+
+    .showcase .container {
+        padding: 0 0 50px;
+        margin: 0;
+    }
+
+    .navbar ul {
+        padding-bottom: 20px;
+    }
+
+    .navbar .social {
+        padding-top: 10px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .navbar ul {
+        font-size: 14px;
+    }
+}
